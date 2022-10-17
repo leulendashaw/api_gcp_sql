@@ -70,28 +70,6 @@ def get_all_customers():
     person = [c for c in customer]
     return person
 
-
-#
-# @app.get("/search", status_code=200)
-# def search_person(account_number: Optional[int] = Query(None, title="account_number",
-#                                                         description="The account number to filter by"),
-#                   account_type: Optional[str] = Query(None, title="account_type",
-#                                                       description="The account type to filter by")):
-#     customer1 = [c for c in customer if c['account_number'] == account_number]
-#     if account_type is None:
-#         if account_number is None:
-#             return customer
-#         else:
-#             return customer1
-#     else:
-#         customer2 = [c for c in customer if account_type.lower() in c['account_type'].lower()]
-#         if account_number is None:
-#             return customer2
-#         else:
-#             combined = [c for c in customer1 if c in customer2]
-#             return combined
-
-
 # Add one customer to the DB
 
 # Add one customer information to the Database
